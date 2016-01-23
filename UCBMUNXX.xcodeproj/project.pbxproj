@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AD8620321C2BFCED00C71C78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8620311C2BFCED00C71C78 /* AppDelegate.swift */; };
-		AD8620341C2BFCED00C71C78 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8620331C2BFCED00C71C78 /* FirstViewController.swift */; };
-		AD8620361C2BFCED00C71C78 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8620351C2BFCED00C71C78 /* SecondViewController.swift */; };
+		AD8620341C2BFCED00C71C78 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8620331C2BFCED00C71C78 /* HomeViewController.swift */; };
+		AD8620361C2BFCED00C71C78 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8620351C2BFCED00C71C78 /* ResourcesViewController.swift */; };
 		AD8620391C2BFCED00C71C78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD8620371C2BFCED00C71C78 /* Main.storyboard */; };
 		AD86203B1C2BFCED00C71C78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD86203A1C2BFCED00C71C78 /* Assets.xcassets */; };
 		AD86203E1C2BFCED00C71C78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD86203C1C2BFCED00C71C78 /* LaunchScreen.storyboard */; };
@@ -31,6 +31,17 @@
 		AD86207D1C2C5EE700C71C78 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AD86207C1C2C5EE700C71C78 /* libsqlite3.tbd */; };
 		AD86207F1C2C5EF100C71C78 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AD86207E1C2C5EF100C71C78 /* libz.tbd */; };
 		AD8620821C2C5F6100C71C78 /* BridgingHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8620811C2C5F6100C71C78 /* BridgingHeader.m */; };
+		AD8620841C2C61AB00C71C78 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8620831C2C61AB00C71C78 /* SignupViewController.swift */; };
+		AD8620861C2C7BE600C71C78 /* MUNChatPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8620851C2C7BE600C71C78 /* MUNChatPost.swift */; };
+		AD8620881C2CF3C300C71C78 /* ComposePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8620871C2CF3C300C71C78 /* ComposePostViewController.swift */; };
+		AD86208A1C2DB72F00C71C78 /* MUNChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8620891C2DB72F00C71C78 /* MUNChatTableViewController.swift */; };
+		AD86208D1C2DB7ED00C71C78 /* MUNChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD86208C1C2DB7ED00C71C78 /* MUNChatTableViewCell.swift */; };
+		AD8620971C32558400C71C78 /* MUNChatReply.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8620961C32558400C71C78 /* MUNChatReply.swift */; };
+		AD8620991C3312BC00C71C78 /* MUNChatRepliesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8620981C3312BC00C71C78 /* MUNChatRepliesTableViewController.swift */; };
+		AD86209B1C33B23E00C71C78 /* FlagPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD86209A1C33B23E00C71C78 /* FlagPostViewController.swift */; };
+		AD86209D1C346E0C00C71C78 /* MUNStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD86209C1C346E0C00C71C78 /* MUNStoreViewController.swift */; };
+		AD86209F1C34787000C71C78 /* Bugs.report in Resources */ = {isa = PBXBuildFile; fileRef = AD86209E1C34787000C71C78 /* Bugs.report */; };
+		ADAE9A861C3864E800C2B532 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE9A851C3864E800C2B532 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +64,8 @@
 /* Begin PBXFileReference section */
 		AD86202E1C2BFCED00C71C78 /* UCBMUNXX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCBMUNXX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD8620311C2BFCED00C71C78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD8620331C2BFCED00C71C78 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		AD8620351C2BFCED00C71C78 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		AD8620331C2BFCED00C71C78 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AD8620351C2BFCED00C71C78 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
 		AD8620381C2BFCED00C71C78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD86203A1C2BFCED00C71C78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD86203D1C2BFCED00C71C78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -82,6 +93,17 @@
 		AD86207E1C2C5EF100C71C78 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		AD8620801C2C5F6000C71C78 /* UCBMUNXX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UCBMUNXX-Bridging-Header.h"; sourceTree = "<group>"; };
 		AD8620811C2C5F6100C71C78 /* BridgingHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgingHeader.m; sourceTree = "<group>"; };
+		AD8620831C2C61AB00C71C78 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		AD8620851C2C7BE600C71C78 /* MUNChatPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MUNChatPost.swift; sourceTree = "<group>"; };
+		AD8620871C2CF3C300C71C78 /* ComposePostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposePostViewController.swift; sourceTree = "<group>"; };
+		AD8620891C2DB72F00C71C78 /* MUNChatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MUNChatTableViewController.swift; sourceTree = "<group>"; };
+		AD86208C1C2DB7ED00C71C78 /* MUNChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MUNChatTableViewCell.swift; sourceTree = "<group>"; };
+		AD8620961C32558400C71C78 /* MUNChatReply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MUNChatReply.swift; sourceTree = "<group>"; };
+		AD8620981C3312BC00C71C78 /* MUNChatRepliesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MUNChatRepliesTableViewController.swift; sourceTree = "<group>"; };
+		AD86209A1C33B23E00C71C78 /* FlagPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagPostViewController.swift; sourceTree = "<group>"; };
+		AD86209C1C346E0C00C71C78 /* MUNStoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MUNStoreViewController.swift; sourceTree = "<group>"; };
+		AD86209E1C34787000C71C78 /* Bugs.report */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bugs.report; sourceTree = "<group>"; };
+		ADAE9A851C3864E800C2B532 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,17 +148,6 @@
 		AD8620251C2BFCED00C71C78 = {
 			isa = PBXGroup;
 			children = (
-				AD86207E1C2C5EF100C71C78 /* libz.tbd */,
-				AD86207C1C2C5EE700C71C78 /* libsqlite3.tbd */,
-				AD86207A1C2C5ED900C71C78 /* SystemConfiguration.framework */,
-				AD8620781C2C5ED200C71C78 /* StoreKit.framework */,
-				AD8620761C2C5ECC00C71C78 /* Security.framework */,
-				AD8620741C2C5EC600C71C78 /* QuartzCore.framework */,
-				AD8620721C2C5EBD00C71C78 /* MobileCoreServices.framework */,
-				AD8620701C2C5EB300C71C78 /* CoreLocation.framework */,
-				AD86206E1C2C5EAB00C71C78 /* CoreGraphics.framework */,
-				AD86206C1C2C5E9B00C71C78 /* CFNetwork.framework */,
-				AD86206A1C2C5E9100C71C78 /* AudioToolbox.framework */,
 				AD8620301C2BFCED00C71C78 /* UCBMUNXX */,
 				AD8620471C2BFCED00C71C78 /* UCBMUNXXTests */,
 				AD8620521C2BFCED00C71C78 /* UCBMUNXXUITests */,
@@ -158,11 +169,14 @@
 			isa = PBXGroup;
 			children = (
 				AD8620311C2BFCED00C71C78 /* AppDelegate.swift */,
-				AD8620331C2BFCED00C71C78 /* FirstViewController.swift */,
+				AD8620331C2BFCED00C71C78 /* HomeViewController.swift */,
 				AD8620631C2C5D8700C71C78 /* Frameworks */,
-				AD8620351C2BFCED00C71C78 /* SecondViewController.swift */,
+				AD8620351C2BFCED00C71C78 /* ResourcesViewController.swift */,
+				AD86209C1C346E0C00C71C78 /* MUNStoreViewController.swift */,
 				AD8620371C2BFCED00C71C78 /* Main.storyboard */,
-				AD8620611C2C5CB700C71C78 /* LoginViewController.swift */,
+				AD86209E1C34787000C71C78 /* Bugs.report */,
+				AD86208B1C2DB73600C71C78 /* MUNChat */,
+				ADAE9A841C3864BF00C2B532 /* Profile/Registration */,
 				AD86203A1C2BFCED00C71C78 /* Assets.xcassets */,
 				AD86203C1C2BFCED00C71C78 /* LaunchScreen.storyboard */,
 				AD86203F1C2BFCED00C71C78 /* Info.plist */,
@@ -193,11 +207,46 @@
 		AD8620631C2C5D8700C71C78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AD86207E1C2C5EF100C71C78 /* libz.tbd */,
+				AD86207C1C2C5EE700C71C78 /* libsqlite3.tbd */,
+				AD86207A1C2C5ED900C71C78 /* SystemConfiguration.framework */,
+				AD8620781C2C5ED200C71C78 /* StoreKit.framework */,
+				AD8620761C2C5ECC00C71C78 /* Security.framework */,
+				AD8620741C2C5EC600C71C78 /* QuartzCore.framework */,
+				AD8620721C2C5EBD00C71C78 /* MobileCoreServices.framework */,
+				AD8620701C2C5EB300C71C78 /* CoreLocation.framework */,
+				AD86206E1C2C5EAB00C71C78 /* CoreGraphics.framework */,
+				AD86206C1C2C5E9B00C71C78 /* CFNetwork.framework */,
+				AD86206A1C2C5E9100C71C78 /* AudioToolbox.framework */,
 				AD8620641C2C5E2C00C71C78 /* ParseUI.framework */,
 				AD8620651C2C5E2C00C71C78 /* Bolts.framework */,
 				AD8620661C2C5E2C00C71C78 /* Parse.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD86208B1C2DB73600C71C78 /* MUNChat */ = {
+			isa = PBXGroup;
+			children = (
+				AD86208C1C2DB7ED00C71C78 /* MUNChatTableViewCell.swift */,
+				AD8620891C2DB72F00C71C78 /* MUNChatTableViewController.swift */,
+				AD8620981C3312BC00C71C78 /* MUNChatRepliesTableViewController.swift */,
+				AD8620871C2CF3C300C71C78 /* ComposePostViewController.swift */,
+				AD8620851C2C7BE600C71C78 /* MUNChatPost.swift */,
+				AD8620961C32558400C71C78 /* MUNChatReply.swift */,
+				AD86209A1C33B23E00C71C78 /* FlagPostViewController.swift */,
+			);
+			name = MUNChat;
+			sourceTree = "<group>";
+		};
+		ADAE9A841C3864BF00C2B532 /* Profile/Registration */ = {
+			isa = PBXGroup;
+			children = (
+				AD8620831C2C61AB00C71C78 /* SignupViewController.swift */,
+				AD8620611C2C5CB700C71C78 /* LoginViewController.swift */,
+				ADAE9A851C3864E800C2B532 /* ProfileViewController.swift */,
+			);
+			name = Profile/Registration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +355,7 @@
 			files = (
 				AD86203E1C2BFCED00C71C78 /* LaunchScreen.storyboard in Resources */,
 				AD86203B1C2BFCED00C71C78 /* Assets.xcassets in Resources */,
+				AD86209F1C34787000C71C78 /* Bugs.report in Resources */,
 				AD8620391C2BFCED00C71C78 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,11 +381,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD8620841C2C61AB00C71C78 /* SignupViewController.swift in Sources */,
+				AD8620991C3312BC00C71C78 /* MUNChatRepliesTableViewController.swift in Sources */,
 				AD8620621C2C5CB700C71C78 /* LoginViewController.swift in Sources */,
-				AD8620361C2BFCED00C71C78 /* SecondViewController.swift in Sources */,
+				AD8620361C2BFCED00C71C78 /* ResourcesViewController.swift in Sources */,
+				AD8620861C2C7BE600C71C78 /* MUNChatPost.swift in Sources */,
 				AD8620821C2C5F6100C71C78 /* BridgingHeader.m in Sources */,
+				AD86209B1C33B23E00C71C78 /* FlagPostViewController.swift in Sources */,
+				AD8620881C2CF3C300C71C78 /* ComposePostViewController.swift in Sources */,
+				AD86208D1C2DB7ED00C71C78 /* MUNChatTableViewCell.swift in Sources */,
+				AD86209D1C346E0C00C71C78 /* MUNStoreViewController.swift in Sources */,
 				AD8620321C2BFCED00C71C78 /* AppDelegate.swift in Sources */,
-				AD8620341C2BFCED00C71C78 /* FirstViewController.swift in Sources */,
+				AD86208A1C2DB72F00C71C78 /* MUNChatTableViewController.swift in Sources */,
+				ADAE9A861C3864E800C2B532 /* ProfileViewController.swift in Sources */,
+				AD8620971C32558400C71C78 /* MUNChatReply.swift in Sources */,
+				AD8620341C2BFCED00C71C78 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +635,7 @@
 				AD86205A1C2BFCED00C71C78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD86205B1C2BFCED00C71C78 /* Build configuration list for PBXNativeTarget "UCBMUNXXTests" */ = {
 			isa = XCConfigurationList;
@@ -583,6 +644,7 @@
 				AD86205D1C2BFCED00C71C78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD86205E1C2BFCED00C71C78 /* Build configuration list for PBXNativeTarget "UCBMUNXXUITests" */ = {
 			isa = XCConfigurationList;
@@ -591,6 +653,7 @@
 				AD8620601C2BFCED00C71C78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
