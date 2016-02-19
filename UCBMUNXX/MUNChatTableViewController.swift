@@ -70,7 +70,7 @@ class MUNChatTableViewController: PFQueryTableViewController {
         
         cell.postImage.file = post.image!
         cell.postImage.loadInBackground(nil) { percent in
-            cell.postLoading.progress = Float(percent)*0.01
+//            cell.postLoading.progress = Float(percent)*0.01
             print("\(percent)%")
         }
         

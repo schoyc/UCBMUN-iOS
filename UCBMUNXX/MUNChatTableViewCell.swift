@@ -20,7 +20,7 @@ class MUNChatTableViewCell: PFTableViewCell {
     @IBOutlet weak var postScore: UILabel!
  
 
-    @IBOutlet weak var postLoading: UIProgressView!
+
     
     
     @IBOutlet weak var upVoteButton: UIButton!
