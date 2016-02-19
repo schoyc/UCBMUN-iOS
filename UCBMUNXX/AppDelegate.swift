@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Stripe
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,6 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+    
+        //Set Stripe Keys
+        Stripe.setDefaultPublishableKey("pk_test_tejoqCcbm4uGqYxbzWzXYtzQ")
+    
         
         // Override point for customization after application launch.
         return true

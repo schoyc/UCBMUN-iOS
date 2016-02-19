@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MUNStoreViewController: UIViewController {
+class MUNStoreViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

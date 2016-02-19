@@ -18,6 +18,7 @@ class MUNChatTableViewController: PFQueryTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //recentOrPopularControl.addTarget(self, action: "recentOrPopularChanged", forControlEvents: .ValueChanged)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -49,10 +50,18 @@ class MUNChatTableViewController: PFQueryTableViewController {
         
     }
     
-    @IBAction func recentOrPopularChanged(sender: AnyObject) {
-        self.tableView.reloadData()
+    
+    func recentOrPopularChanged() {
+        //self.tableView.reloadData()
+        loadObjects()
+        //print(recentOrPopularControl.selectedSegmentIndex)
         
     }
+    
+    @IBAction func segmentedControlAction(sender: AnyObject) {
+        loadObjects()
+    }
+    
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject!) -> PFTableViewCell? {
@@ -68,7 +77,7 @@ class MUNChatTableViewController: PFQueryTableViewController {
         
         let creationDate = post.createdAt
         let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "HH:mm dd/MM yyyy"
+        dateFormatter.dateFormat = "h:mm a, EEE"
         let dateString = dateFormatter.stringFromDate(creationDate!)
         
         cell.postUser.text = post.user.username

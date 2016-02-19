@@ -1,0 +1,48 @@
+//
+//  PaymentViewController.swift
+//  UCBMUNXX
+//
+//  Created by Steven Chen on 2/17/16.
+//  Copyright © 2016 Steven Chen. All rights reserved.
+//
+
+import UIKit
+
+class PaymentViewController: UIViewController {
+    
+    var order : MerchOrder?
+    
+    required init?(coder aDecoder: NSCoder) {
+        print("Replies Table View rendering")
+        super.init(coder: aDecoder)
+        self.order = nil
+    }
+    
+    deinit {
+        print("deinit RepliesTableViewController")
+    }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignupViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class SignupViewController: UIViewController {
 
     
     @IBOutlet weak var nameTextField: UITextField!
@@ -16,15 +16,7 @@ class SignupViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     @IBOutlet weak var emailTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
-    
-    @IBOutlet weak var characterName: UITextField!
-    
-    @IBOutlet weak var universityPicker: UIPickerView!
-    
-    var university : String?
 
-    
-    var pickerData = ["Univ. of California, Berkeley", "Univ. of MUN"]
     
     let signupSuccessSegue = "SignupToMain"
     
@@ -32,8 +24,6 @@ class SignupViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.universityPicker.dataSource = self;
-        self.universityPicker.delegate = self;
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,9 +34,9 @@ class SignupViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     @IBAction func signupPressed(sender: AnyObject) {
         let user = PFUser()
         
-        user.username = characterName.text
         user.email = emailTextField.text
         user.password = passwordTextField.text
+        user.username = nameTextField.text
         
         user.signUpInBackgroundWithBlock { succeeded, error in
             if (succeeded) {
@@ -58,9 +48,6 @@ class SignupViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
                 
             }
         }
-        
-        user.setObject(nameTextField.text!, forKey: "name")
-        user.setObject(self.university!, forKey: "university")
         
         user.saveInBackground()
         
@@ -76,23 +63,5 @@ class SignupViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
     */
     
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerData.count;
-    }
-    
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerData[row]
-    }
-    
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
-    {
-        self.university = pickerData[row]
-    }
-
 
 }

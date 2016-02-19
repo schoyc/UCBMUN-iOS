@@ -90,11 +90,7 @@ class ComposePostViewController: UIViewController {
         
         post.saveInBackgroundWithBlock{succeeded, error in
             if succeeded {
-//                try {
-//                    let parentPost = PFQuery.getObjectOfClass(MUNChatPost.parseClassName(), objectId: self.postToReply!)
-//                    parentPost.incrementKey("repliesCount")
-//                } catch
-//                
+                
                 print("REPLY SUCCEEDED")
                 self.dismissViewControllerAnimated(true, completion: nil);
                 print("TRANSITION WORKING?")
