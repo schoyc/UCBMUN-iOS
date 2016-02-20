@@ -56,10 +56,13 @@ class MUNChatRepliesTableViewController: MUNChatTableViewController {
     }
     
     @IBAction func backToMUNChatPressed(sender: AnyObject) {
-        performSegueWithIdentifier("RepliesToMUNChat", sender: sender)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     
+    @IBAction func flagClicked(sender: AnyObject) {
+        performSegueWithIdentifier("MUNChatToFlagPost", sender: nil)
+    }
     
 
 

@@ -100,6 +100,8 @@
 		ADBE6DA41C771C0000481901 /* flag-7.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBE6DA31C771C0000481901 /* flag-7.png */; };
 		ADBE6DA61C771CF600481901 /* square-individual-nine-7.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBE6DA51C771CF600481901 /* square-individual-nine-7.png */; };
 		ADBE6DA81C77977200481901 /* logo_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBE6DA71C77977200481901 /* logo_blue.png */; };
+		ADBE6DAA1C77CE6900481901 /* note-write-7.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBE6DA91C77CE6900481901 /* note-write-7.png */; };
+		ADBE6DAC1C77CF2000481901 /* Pen-50.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBE6DAB1C77CF2000481901 /* Pen-50.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -221,6 +223,8 @@
 		ADBE6DA31C771C0000481901 /* flag-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flag-7.png"; sourceTree = "<group>"; };
 		ADBE6DA51C771CF600481901 /* square-individual-nine-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square-individual-nine-7.png"; sourceTree = "<group>"; };
 		ADBE6DA71C77977200481901 /* logo_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_blue.png; sourceTree = "<group>"; };
+		ADBE6DA91C77CE6900481901 /* note-write-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "note-write-7.png"; sourceTree = "<group>"; };
+		ADBE6DAB1C77CF2000481901 /* Pen-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pen-50.png"; sourceTree = "<group>"; };
 		F2531B943DCB6CBC8A7B4FB3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -393,7 +397,9 @@
 				AD50642E1C747B20008E7558 /* flag.png */,
 				AD5F2D9F1C7479770088A7E0 /* upvote.png */,
 				AD21CED41C6D263F00084813 /* wsf.png */,
+				ADBE6DAB1C77CF2000481901 /* Pen-50.png */,
 				AD21CED51C6D263F00084813 /* zanu.png */,
+				ADBE6DA91C77CE6900481901 /* note-write-7.png */,
 				AD21CED61C6D263F00084813 /* zapu.png */,
 				AD8620311C2BFCED00C71C78 /* AppDelegate.swift */,
 				AD8620631C2C5D8700C71C78 /* Frameworks */,
@@ -607,6 +613,7 @@
 				AD50642F1C747B20008E7558 /* flag.png in Resources */,
 				AD21CEDD1C6D263F00084813 /* nfl.png in Resources */,
 				AD21CEDE1C6D263F00084813 /* obama.png in Resources */,
+				ADBE6DAC1C77CF2000481901 /* Pen-50.png in Resources */,
 				AD86203B1C2BFCED00C71C78 /* Assets.xcassets in Resources */,
 				AD86209F1C34787000C71C78 /* Bugs.report in Resources */,
 				ADBE6DA41C771C0000481901 /* flag-7.png in Resources */,
@@ -628,6 +635,7 @@
 				AD21CED91C6D263F00084813 /* darkweb.png in Resources */,
 				ADBE6D9E1C771B9000481901 /* wallet-7.png in Resources */,
 				AD50643E1C757F57008E7558 /* handbook.png in Resources */,
+				ADBE6DAA1C77CE6900481901 /* note-write-7.png in Resources */,
 				AD5064431C757F57008E7558 /* schedule.png in Resources */,
 				ADBE6DA01C771BAB00481901 /* shopping-cart-7.png in Resources */,
 				AD5F2DA11C7479770088A7E0 /* upvote.png in Resources */,
