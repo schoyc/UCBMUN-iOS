@@ -15,7 +15,7 @@ class ResourcesViewController: UIViewController, UICollectionViewDataSource, UIC
     let resources = [
         ["Schedule", "schedule.png", "fromResourcesToSchedule"],
         ["Committees", "committees.png", "fromResourcesToCommittees"],
-        ["Programming", "programming.png", "fromResourcesToProgramming"],
+        ["Program Events", "programming.png", "fromResourcesToProgramming"],
         ["Hotel Map", "hotel.png", "fromResourcesToHotelMap"],
         ["Sponsors", "sponsors.png", "fromResourcesToSponsors"],
         ["Contact Us", "contact.png", "fromResourcesToContacts"],
@@ -51,11 +51,21 @@ class ResourcesViewController: UIViewController, UICollectionViewDataSource, UIC
         let resource = self.resources[indexPath.item]
 
         cell.resourceLabel.text = resource[0]
+        print(resource[0])
+        print(resource[1])
         cell.resourceIcon.image = UIImage(named: resource[1])
+//        cell.layer.borderWidth = 1
+//        cell.layer.cornerRadius = 8
         //cell.backgroundColor = UIColor.yellowColor() // make cell more visible in our example project
         
         return cell
     }
+    
+    func collectionView(collectionView: UICollectionView, didHighlightItemAtIndexPath indexPath: NSIndexPath) {
+        let cell = collectionView.cellForItemAtIndexPath(indexPath)
+        cell?.backgroundColor = UIColor.lightGrayColor()
+    }
+
     
     // MARK: - UICollectionViewDelegate protocol
     
@@ -65,6 +75,10 @@ class ResourcesViewController: UIViewController, UICollectionViewDataSource, UIC
         performSegueWithIdentifier(resource[2], sender: nil)
     }
     
+    func collectionView(collectionView: UICollectionView, didUnhighlightItemAtIndexPath indexPath: NSIndexPath) {
+        let cell = collectionView.cellForItemAtIndexPath(indexPath)
+        cell?.backgroundColor = UIColor.clearColor()
+    }
 
     
     @IBAction func rulesClicked(sender: AnyObject) {

@@ -1,21 +1,24 @@
 //
-//  MUNStoreTableViewController.swift
+//  ContactTableViewController.swift
 //  UCBMUNXX
 //
-//  Created by Steven Chen on 1/30/16.
+//  Created by Steven Chen on 2/20/16.
 //  Copyright © 2016 Steven Chen. All rights reserved.
 //
 
 import UIKit
 
-class MUNStoreTableViewController: UITableViewController {
+class ContactTableViewController: UITableViewController {
     
-    let products = [MerchProduct(name: "UCBMUN XX T-Shirt", price: 15, description: "Remember your time at UCBMUN XX with a limited edition shirt commemorating our 20th conference!", image: "munshirt.jpg"),
-        MerchProduct(name: "UCBMUN XX Beer Mugs", price: 15, description: "Drink to substantive debate and joyous cameraderie with the first ever UCBMUN beer mug!", image: "munbeer.jpg"),
-        MerchProduct(name: "UCBMUN XX Shot Glasses", price: 15, description: "Drink to substantive debate and joyous cameraderie with the first ever UCBMUN beer mug!", image: "munshot.jpg"),
-        MerchProduct(name: "Candy Grams", price: 3, description: "Send something sweet to that good looking delegate from New Zealand or you partner in crime in the Rolex XII.", image: "wsf.png"),
+    let contacts = [
+        ["Varsha Venkatasubramanian", "Secretary General", "(510) 697-6046", "varsha.jpg"],
+        ["Raymond King", "Deputy Secretary General", "(510) 693-7701", "raymond.jpg"],
         
+        ["Beckett Kelly", "Chief of Staff--Internal & Office of Delegate Services", "925-437-0063", "beckett.jpg" ]
+    
     ]
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,10 +28,6 @@ class MUNStoreTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
-    
-    func loadProducts() {
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,35 +39,28 @@ class MUNStoreTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
-    }
-    
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("toPurchaseItem", sender: tableView)
-    }
-    
-    @IBAction func purchaseItem(sender: AnyObject) {
-        
+        return 0
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("merchCell", forIndexPath: indexPath) as! MUNStoreTableViewCell
-        let product = self.products[indexPath.row]
+        let cell = tableView.dequeueReusableCellWithIdentifier("contactCell", forIndexPath: indexPath) as! ContactTableViewCell
+        let contact = self.contacts[indexPath.row]
         
-        cell.itemName.text = product.name
-        cell.itemDescription.text = product.description
-        cell.itemPrice.text = "$\(String(product.price!)).00"
-        cell.itemPicture.image = UIImage(named: product.image!)
         
+        cell.contactName.text = contact[0]
+        cell.contactTitle.text = contact[1]
+        cell.contactPhone.text = contact[2]
+        cell.contactImage.image = UIImage(named: contact[3])
+
         return cell
     }
-
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -114,24 +106,5 @@ class MUNStoreTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        switch segue.identifier! {
-        case "toPurchaseItem":
-            let sender = sender as! UITableView
-            let indexPath = sender.indexPathForSelectedRow!
-            let product = self.products[indexPath.row]
-            
-            let purchaseItemVC = segue.destinationViewController as! PurchaseItemViewController
-            purchaseItemVC.setProduct(product)
-            
-        default:
-            print("No segue prep")
-        }
-        
-        
-    }
-    
-    
 
 }

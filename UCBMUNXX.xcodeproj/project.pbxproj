@@ -47,7 +47,7 @@
 		AD50643E1C757F57008E7558 /* handbook.png in Resources */ = {isa = PBXBuildFile; fileRef = AD5064381C757F57008E7558 /* handbook.png */; };
 		AD50643F1C757F57008E7558 /* rules.png in Resources */ = {isa = PBXBuildFile; fileRef = AD5064391C757F57008E7558 /* rules.png */; };
 		AD5064401C757F57008E7558 /* contact.png in Resources */ = {isa = PBXBuildFile; fileRef = AD50643A1C757F57008E7558 /* contact.png */; };
-		AD5064411C757F57008E7558 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = AD50643B1C757F57008E7558 /* map.png */; };
+		AD5064411C757F57008E7558 /* hotel.png in Resources */ = {isa = PBXBuildFile; fileRef = AD50643B1C757F57008E7558 /* hotel.png */; };
 		AD5064421C757F57008E7558 /* committees.png in Resources */ = {isa = PBXBuildFile; fileRef = AD50643C1C757F57008E7558 /* committees.png */; };
 		AD5064431C757F57008E7558 /* schedule.png in Resources */ = {isa = PBXBuildFile; fileRef = AD50643D1C757F57008E7558 /* schedule.png */; };
 		AD5F2DA01C7479770088A7E0 /* downvote.png in Resources */ = {isa = PBXBuildFile; fileRef = AD5F2D9E1C7479770088A7E0 /* downvote.png */; };
@@ -90,6 +90,17 @@
 		ADA4158A1C78151A00DB166A /* camera-7.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA415891C78151A00DB166A /* camera-7.png */; };
 		ADAE9A861C3864E800C2B532 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE9A851C3864E800C2B532 /* ProfileViewController.swift */; };
 		ADBB3A1A1C78D6F3007B7403 /* ResourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB3A191C78D6F3007B7403 /* ResourceCell.swift */; };
+		ADBB3A1D1C78DDF4007B7403 /* programming.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBB3A1C1C78DDF4007B7403 /* programming.png */; };
+		ADBB3A1F1C78DDFE007B7403 /* sponsors.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBB3A1E1C78DDFE007B7403 /* sponsors.png */; };
+		ADBB3A221C78E9B9007B7403 /* SponsorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB3A211C78E9B9007B7403 /* SponsorsTableViewController.swift */; };
+		ADBB3A251C78F28B007B7403 /* ProgrammingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB3A241C78F28B007B7403 /* ProgrammingViewController.swift */; };
+		ADBB3A271C78F653007B7403 /* ProgramEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB3A261C78F653007B7403 /* ProgramEvent.swift */; };
+		ADBB3A291C78F73E007B7403 /* ProgramEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB3A281C78F73E007B7403 /* ProgramEventCell.swift */; };
+		ADBB3A2B1C78FEBC007B7403 /* munshirt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADBB3A2A1C78FEBC007B7403 /* munshirt.jpg */; };
+		ADBB3A2E1C78FEC7007B7403 /* munshot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADBB3A2C1C78FEC7007B7403 /* munshot.jpg */; };
+		ADBB3A2F1C78FEC7007B7403 /* munbeer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADBB3A2D1C78FEC7007B7403 /* munbeer.jpg */; };
+		ADBB3A331C7912B8007B7403 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB3A321C7912B8007B7403 /* ContactTableViewController.swift */; };
+		ADBB3A351C791329007B7403 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB3A341C791329007B7403 /* ContactTableViewCell.swift */; };
 		ADBE6D8E1C759B4000481901 /* ScheduleItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBE6D8D1C759B4000481901 /* ScheduleItemViewController.swift */; };
 		ADBE6D951C76603D00481901 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBE6D911C76603D00481901 /* info.png */; };
 		ADBE6D961C76603D00481901 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBE6D921C76603D00481901 /* home.png */; };
@@ -166,7 +177,7 @@
 		AD5064381C757F57008E7558 /* handbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = handbook.png; path = ../../../Downloads/handbook.png; sourceTree = "<group>"; };
 		AD5064391C757F57008E7558 /* rules.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rules.png; path = ../../../Downloads/rules.png; sourceTree = "<group>"; };
 		AD50643A1C757F57008E7558 /* contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = contact.png; path = ../../../Downloads/contact.png; sourceTree = "<group>"; };
-		AD50643B1C757F57008E7558 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map.png; path = ../../../Downloads/map.png; sourceTree = "<group>"; };
+		AD50643B1C757F57008E7558 /* hotel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hotel.png; path = ../../../Downloads/hotel.png; sourceTree = "<group>"; };
 		AD50643C1C757F57008E7558 /* committees.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = committees.png; path = ../../../Downloads/committees.png; sourceTree = "<group>"; };
 		AD50643D1C757F57008E7558 /* schedule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = schedule.png; path = ../../../Downloads/schedule.png; sourceTree = "<group>"; };
 		AD5F2D9E1C7479770088A7E0 /* downvote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = downvote.png; path = ../../../Downloads/downvote.png; sourceTree = "<group>"; };
@@ -216,6 +227,17 @@
 		ADA415891C78151A00DB166A /* camera-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-7.png"; sourceTree = "<group>"; };
 		ADAE9A851C3864E800C2B532 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		ADBB3A191C78D6F3007B7403 /* ResourceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceCell.swift; sourceTree = "<group>"; };
+		ADBB3A1C1C78DDF4007B7403 /* programming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = programming.png; sourceTree = "<group>"; };
+		ADBB3A1E1C78DDFE007B7403 /* sponsors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sponsors.png; sourceTree = "<group>"; };
+		ADBB3A211C78E9B9007B7403 /* SponsorsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsorsTableViewController.swift; sourceTree = "<group>"; };
+		ADBB3A241C78F28B007B7403 /* ProgrammingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammingViewController.swift; sourceTree = "<group>"; };
+		ADBB3A261C78F653007B7403 /* ProgramEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramEvent.swift; sourceTree = "<group>"; };
+		ADBB3A281C78F73E007B7403 /* ProgramEventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramEventCell.swift; sourceTree = "<group>"; };
+		ADBB3A2A1C78FEBC007B7403 /* munshirt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = munshirt.jpg; sourceTree = "<group>"; };
+		ADBB3A2C1C78FEC7007B7403 /* munshot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = munshot.jpg; sourceTree = "<group>"; };
+		ADBB3A2D1C78FEC7007B7403 /* munbeer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = munbeer.jpg; sourceTree = "<group>"; };
+		ADBB3A321C7912B8007B7403 /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
+		ADBB3A341C791329007B7403 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		ADBE6D8D1C759B4000481901 /* ScheduleItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleItemViewController.swift; sourceTree = "<group>"; };
 		ADBE6D911C76603D00481901 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		ADBE6D921C76603D00481901 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
@@ -311,6 +333,8 @@
 		AD5F2D9B1C743F340088A7E0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ADBB3A231C78F26F007B7403 /* Programming */,
+				ADBB3A201C78E985007B7403 /* Sponsors */,
 				AD5F2D9D1C743FF90088A7E0 /* Committees */,
 				AD5F2D9C1C743FC00088A7E0 /* Schedule */,
 				AD21CEB11C5D5AD600084813 /* ExpandableTableViewController.swift */,
@@ -372,6 +396,7 @@
 				ADBE6D911C76603D00481901 /* info.png */,
 				ADBE6D921C76603D00481901 /* home.png */,
 				ADBE6D931C76603D00481901 /* munstore.png */,
+				ADBB3A1B1C78DB6B007B7403 /* Resource Icons */,
 				ADBE6DA71C77977200481901 /* logo_blue.png */,
 				ADBE6D941C76603D00481901 /* munchat.png */,
 				AD21CECA1C6D263F00084813 /* darkweb.png */,
@@ -386,26 +411,23 @@
 				ADA415891C78151A00DB166A /* camera-7.png */,
 				ADA415871C78151100DB166A /* photo-7.png */,
 				AD21CED31C6D263F00084813 /* unsc.png */,
-				AD5064381C757F57008E7558 /* handbook.png */,
-				AD5064391C757F57008E7558 /* rules.png */,
 				ADBE6DA11C771BEF00481901 /* home-7.png */,
-				AD50643A1C757F57008E7558 /* contact.png */,
 				ADBE6D9D1C771B9000481901 /* wallet-7.png */,
 				ADBE6DA31C771C0000481901 /* flag-7.png */,
 				ADBE6D9B1C771B5800481901 /* tag-7.png */,
 				ADBE6D9F1C771BAB00481901 /* shopping-cart-7.png */,
 				ADBE6DA51C771CF600481901 /* square-individual-nine-7.png */,
-				AD50643B1C757F57008E7558 /* map.png */,
 				ADBE6D991C771ACA00481901 /* message-7.png */,
-				AD50643C1C757F57008E7558 /* committees.png */,
-				AD50643D1C757F57008E7558 /* schedule.png */,
 				AD5F2D9E1C7479770088A7E0 /* downvote.png */,
 				AD50642E1C747B20008E7558 /* flag.png */,
 				AD5F2D9F1C7479770088A7E0 /* upvote.png */,
 				AD21CED41C6D263F00084813 /* wsf.png */,
 				ADBE6DAB1C77CF2000481901 /* Pen-50.png */,
 				AD21CED51C6D263F00084813 /* zanu.png */,
+				ADBB3A2C1C78FEC7007B7403 /* munshot.jpg */,
+				ADBB3A2D1C78FEC7007B7403 /* munbeer.jpg */,
 				ADBE6DA91C77CE6900481901 /* note-write-7.png */,
+				ADBB3A2A1C78FEBC007B7403 /* munshirt.jpg */,
 				AD21CED61C6D263F00084813 /* zapu.png */,
 				AD8620311C2BFCED00C71C78 /* AppDelegate.swift */,
 				AD8620631C2C5D8700C71C78 /* Frameworks */,
@@ -494,6 +516,8 @@
 				AD5064361C75582E008E7558 /* DelegateHandbookViewController.swift */,
 				AD21CEE81C70536900084813 /* HotelMapViewController.swift */,
 				AD21CEE61C7046C600084813 /* RulesProceduresViewController.swift */,
+				ADBB3A321C7912B8007B7403 /* ContactTableViewController.swift */,
+				ADBB3A341C791329007B7403 /* ContactTableViewCell.swift */,
 			);
 			name = "Single Pages";
 			sourceTree = "<group>";
@@ -505,6 +529,39 @@
 				ADBB3A191C78D6F3007B7403 /* ResourceCell.swift */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		ADBB3A1B1C78DB6B007B7403 /* Resource Icons */ = {
+			isa = PBXGroup;
+			children = (
+				AD5064381C757F57008E7558 /* handbook.png */,
+				AD5064391C757F57008E7558 /* rules.png */,
+				AD50643A1C757F57008E7558 /* contact.png */,
+				AD50643B1C757F57008E7558 /* hotel.png */,
+				ADBB3A1E1C78DDFE007B7403 /* sponsors.png */,
+				ADBB3A1C1C78DDF4007B7403 /* programming.png */,
+				AD50643D1C757F57008E7558 /* schedule.png */,
+				AD50643C1C757F57008E7558 /* committees.png */,
+			);
+			name = "Resource Icons";
+			sourceTree = "<group>";
+		};
+		ADBB3A201C78E985007B7403 /* Sponsors */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB3A211C78E9B9007B7403 /* SponsorsTableViewController.swift */,
+			);
+			name = Sponsors;
+			sourceTree = "<group>";
+		};
+		ADBB3A231C78F26F007B7403 /* Programming */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB3A241C78F28B007B7403 /* ProgrammingViewController.swift */,
+				ADBB3A261C78F653007B7403 /* ProgramEvent.swift */,
+				ADBB3A281C78F73E007B7403 /* ProgramEventCell.swift */,
+			);
+			name = Programming;
 			sourceTree = "<group>";
 		};
 		F3CB4C0DB01358612EAD11BA /* Frameworks */ = {
@@ -622,11 +679,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD5064411C757F57008E7558 /* map.png in Resources */,
+				AD5064411C757F57008E7558 /* hotel.png in Resources */,
 				AD86203E1C2BFCED00C71C78 /* LaunchScreen.storyboard in Resources */,
+				ADBB3A2F1C78FEC7007B7403 /* munbeer.jpg in Resources */,
 				AD21CEDF1C6D263F00084813 /* pilate.png in Resources */,
 				AD21CEE01C6D263F00084813 /* redcliff.png in Resources */,
 				ADBE6D981C76603D00481901 /* munchat.png in Resources */,
+				ADBB3A2B1C78FEBC007B7403 /* munshirt.jpg in Resources */,
 				ADBE6D9A1C771ACA00481901 /* message-7.png in Resources */,
 				ADBE6D961C76603D00481901 /* home.png in Resources */,
 				AD5F2DA01C7479770088A7E0 /* downvote.png in Resources */,
@@ -646,6 +705,7 @@
 				ADBE6D951C76603D00481901 /* info.png in Resources */,
 				AD21CEE11C6D263F00084813 /* rhodesia.png in Resources */,
 				ADBE6D971C76603D00481901 /* munstore.png in Resources */,
+				ADBB3A2E1C78FEC7007B7403 /* munshot.jpg in Resources */,
 				AD21CEE41C6D263F00084813 /* zanu.png in Resources */,
 				AD21CEE51C6D263F00084813 /* zapu.png in Resources */,
 				AD5064401C757F57008E7558 /* contact.png in Resources */,
@@ -655,6 +715,8 @@
 				AD8620391C2BFCED00C71C78 /* Main.storyboard in Resources */,
 				ADA4158A1C78151A00DB166A /* camera-7.png in Resources */,
 				AD21CEE31C6D263F00084813 /* wsf.png in Resources */,
+				ADBB3A1F1C78DDFE007B7403 /* sponsors.png in Resources */,
+				ADBB3A1D1C78DDF4007B7403 /* programming.png in Resources */,
 				AD21CEEB1C70570B00084813 /* floorplan.png in Resources */,
 				ADBE6DA21C771BEF00481901 /* home-7.png in Resources */,
 				AD5064421C757F57008E7558 /* committees.png in Resources */,
@@ -751,17 +813,21 @@
 				AD8620991C3312BC00C71C78 /* MUNChatRepliesTableViewController.swift in Sources */,
 				AD21CEC71C63E80000084813 /* CommitteesTableViewCell.swift in Sources */,
 				AD21CEBD1C5DC1E000084813 /* MerchOrder.swift in Sources */,
+				ADBB3A221C78E9B9007B7403 /* SponsorsTableViewController.swift in Sources */,
 				AD21CEB81C5D777F00084813 /* MUNStoreTableViewController.swift in Sources */,
 				AD21CEBA1C5D77DB00084813 /* MerchProduct.swift in Sources */,
 				AD8620621C2C5CB700C71C78 /* LoginViewController.swift in Sources */,
 				AD8620361C2BFCED00C71C78 /* ResourcesViewController.swift in Sources */,
 				AD8620861C2C7BE600C71C78 /* MUNChatPost.swift in Sources */,
+				ADBB3A351C791329007B7403 /* ContactTableViewCell.swift in Sources */,
 				AD8620821C2C5F6100C71C78 /* BridgingHeader.m in Sources */,
+				ADBB3A291C78F73E007B7403 /* ProgramEventCell.swift in Sources */,
 				AD21CEC11C5DCDDB00084813 /* PurchaseItemViewController.swift in Sources */,
 				AD86209B1C33B23E00C71C78 /* FlagPostViewController.swift in Sources */,
 				AD8620881C2CF3C300C71C78 /* ComposePostViewController.swift in Sources */,
 				AD5064331C7536B5008E7558 /* PaymentViewController.swift in Sources */,
 				AD86208D1C2DB7ED00C71C78 /* MUNChatTableViewCell.swift in Sources */,
+				ADBB3A251C78F28B007B7403 /* ProgrammingViewController.swift in Sources */,
 				AD21CEEF1C705B5100084813 /* HomePageTableViewController.swift in Sources */,
 				AD897CBF1C5B2A4A00222462 /* ScheduleTableViewCell.swift in Sources */,
 				AD5064371C75582E008E7558 /* DelegateHandbookViewController.swift in Sources */,
@@ -772,9 +838,11 @@
 				AD21CEF21C705CBC00084813 /* NewsPostTableViewCell.swift in Sources */,
 				AD5064351C754AFC008E7558 /* VenmoPaymentViewController.swift in Sources */,
 				AD8620971C32558400C71C78 /* MUNChatReply.swift in Sources */,
+				ADBB3A331C7912B8007B7403 /* ContactTableViewController.swift in Sources */,
 				AD21CEE91C70536900084813 /* HotelMapViewController.swift in Sources */,
 				AD21CEE71C7046C600084813 /* RulesProceduresViewController.swift in Sources */,
 				AD21CEB41C5D644400084813 /* ScheduleItem.swift in Sources */,
+				ADBB3A271C78F653007B7403 /* ProgramEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
