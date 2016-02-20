@@ -63,6 +63,13 @@ class HomePageTableViewController: PFQueryTableViewController {
         cell.newsDate.text = dateString
         return cell
     }
+    
+    
+    @IBAction func logOutClicked(sender: AnyObject) {
+        
+        PFUser.logOut()
+        self.performSegueWithIdentifier("HomeToLogin", sender: nil)
+    }
 
 
 

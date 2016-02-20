@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PurchaseItemViewController: UIViewController {
+class PurchaseItemViewController: UIViewController, UITextViewDelegate {
     
     private var product : MerchProduct?
     
@@ -16,7 +16,6 @@ class PurchaseItemViewController: UIViewController {
     
     @IBOutlet weak var productName: UILabel!
     
-    @IBOutlet weak var productDescription: UILabel!
     
     @IBOutlet weak var productPrice: UILabel!
     
@@ -51,9 +50,13 @@ class PurchaseItemViewController: UIViewController {
         quantityStepper.maximumValue = 10
         
         productName.text = product?.name!
-        productDescription.text = product?.description!
         productImage.image = UIImage(named: (product?.image!)!)
-        productPrice.text = (product?.price!)?.description
+        
+        productPrice.text = "$\(String(product!.price!)).00"
+        
+        purchaseComment.text = "Write your candygram message or any comments (e.g. shirt size) here."
+        purchaseComment.textColor = UIColor.lightGrayColor()
+        purchaseComment.delegate = self
         
         // Do any additional setup after loading the view.
     }
@@ -69,6 +72,20 @@ class PurchaseItemViewController: UIViewController {
     
     @IBAction func stepperValueChanged(sender: UIStepper) {
         quantityLabel.text = (Int) (sender.value).description
+    }
+    
+    func textViewDidBeginEditing(textView: UITextView) {
+        if textView.textColor == UIColor.lightGrayColor() {
+            textView.text = nil
+            textView.textColor = UIColor.blackColor()
+        }
+    }
+    
+    func textViewDidEndEditing(textView: UITextView) {
+        if textView.text.isEmpty {
+            textView.text = "Write your candygram message or any comments (e.g. shirt size) here."
+            textView.textColor = UIColor.lightGrayColor()
+        }
     }
 
     

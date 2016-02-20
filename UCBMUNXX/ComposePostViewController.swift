@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ComposePostViewController: UIViewController {
+class ComposePostViewController: UIViewController, UITextViewDelegate {
     
     
     //Attributes 
@@ -26,8 +26,10 @@ class ComposePostViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(self.postToReply!)
+        captionTextField.delegate = self
+        captionTextField.text = "Caption that pic. (max 200 characters)"
+        captionTextField.textColor = UIColor.lightGrayColor()
+        imageLoadingSpinner.hidesWhenStopped = true
 
         // Do any additional setup after loading the view.
     }
@@ -97,6 +99,20 @@ class ComposePostViewController: UIViewController {
             } else {
                 print("ERROR")
             }
+        }
+    }
+    
+    func textViewDidBeginEditing(textView: UITextView) {
+        if textView.textColor == UIColor.lightGrayColor() {
+            textView.text = nil
+            textView.textColor = UIColor.blackColor()
+        }
+    }
+    
+    func textViewDidEndEditing(textView: UITextView) {
+        if textView.text.isEmpty {
+            textView.text = "Caption that pic. (max 200 characters)"
+            textView.textColor = UIColor.lightGrayColor()
         }
     }
 

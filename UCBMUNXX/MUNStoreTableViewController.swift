@@ -10,7 +10,11 @@ import UIKit
 
 class MUNStoreTableViewController: UITableViewController {
     
-    let products = [MerchProduct(name: "UCBMUN XX T-Shirt", price: 15, description: "Remember your time at UCBMUN XX with a limited edition shirt commemorating our 20th conference!", image: "logo_blue.png"), MerchProduct(name: "UCBMUN XX T-Shirt", price: 15, description: "Remember your time at UCBMUN XX with a limited edition shirt commemorating our 20th conference!", image: "logo_blue.png")
+    let products = [MerchProduct(name: "UCBMUN XX T-Shirt", price: 15, description: "Remember your time at UCBMUN XX with a limited edition shirt commemorating our 20th conference!", image: "wsf.png"), MerchProduct(name: "UCBMUN XX T-Shirt", price: 15, description: "Remember your time at UCBMUN XX with a limited edition shirt commemorating our 20th conference!", image: "wsf.png"),
+        MerchProduct(name: "UCBMUN XX Beer Mugs", price: 15, description: "Drink to substantive debate and joyous cameraderie with the first ever UCBMUN beer mug!", image: "wsf.png"),
+        MerchProduct(name: "UCBMUN XX Shot Glasses", price: 15, description: "Drink to substantive debate and joyous cameraderie with the first ever UCBMUN beer mug!", image: "wsf.png"),
+        MerchProduct(name: "Candy Grams", price: 3, description: "Send something sweet to that good looking delegate from New Zealand or you partner in crime in the Rolex XII.", image: "wsf.png"),
+        
     ]
 
     override func viewDidLoad() {
@@ -41,11 +45,11 @@ class MUNStoreTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 8
+        return 4
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("toPurchaseItem", sender: nil)
+        performSegueWithIdentifier("toPurchaseItem", sender: tableView)
     }
     
     @IBAction func purchaseItem(sender: AnyObject) {
@@ -59,7 +63,8 @@ class MUNStoreTableViewController: UITableViewController {
         
         cell.itemName.text = product.name
         cell.itemDescription.text = product.description
-        cell.itemPrice.text = "$\(product.price).00"
+        cell.itemPrice.text = "$\(String(product.price!)).00"
+        cell.itemPicture.image = UIImage(named: product.image!)
         
         return cell
     }
@@ -115,7 +120,7 @@ class MUNStoreTableViewController: UITableViewController {
         case "toPurchaseItem":
             let sender = sender as! UITableView
             let indexPath = sender.indexPathForSelectedRow!
-            let product = self.products[indexPath.row] as! MerchProduct
+            let product = self.products[indexPath.row]
             
             let purchaseItemVC = segue.destinationViewController as! PurchaseItemViewController
             purchaseItemVC.setProduct(product)

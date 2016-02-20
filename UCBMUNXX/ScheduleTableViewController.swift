@@ -17,22 +17,22 @@ class ScheduleTableViewController: ExpandableTableViewController {
         boolArray = [Bool](count: groupArray.count, repeatedValue: false)
         
         let thursday = [
-            ScheduleItem(name: "Registration", time: "3:30pm - 6:15pm"),
+            ScheduleItem(name: "Registration", time: "3:30pm - 6:30pm"),
             ScheduleItem(name: "Model UN 101", time: "4:30pm - 6:00pm"),
-            ScheduleItem(name: "Opening Ceremony", time: "6:30pm - 7:30pm"),
-            ScheduleItem(name: "Committee Session I", time: "7:45pm - 9:45pm"),
-            ScheduleItem(name: "Head Delegate Feedback", time: "10:00pm - 10:30pm"),
-            ScheduleItem(name: "Bear Crawl", time: "10:45pm - onwards"),
+            ScheduleItem(name: "Opening Ceremony", time: "7:00pm - 7:45pm"),
+            ScheduleItem(name: "Committee Session I", time: "8:00pm - 10:00pm"),
+            ScheduleItem(name: "Head Delegate Feedback", time: "10:15pm - 10:45pm"),
+            ScheduleItem(name: "Bear Crawl", time: "11:00pm - 1:00am"),
+            
         ]
         
         let friday = [
-            ScheduleItem(name: "San Francisco Tours", time:  "8:30am - 12:00pm"),
             ScheduleItem(name: "Committee Session II", time:  "1:00pm - 5:00pm"),
             ScheduleItem(name: "Advisor Feedback Forum", time:  "3:00pm - 3:30pm"),
-            ScheduleItem(name: "Dinner", time:  "5:00pm - 6:30pm"),
-            ScheduleItem(name: "Committee Session III", time:  "6:30pm - 9:30pm"),
-            ScheduleItem(name: "Head Delegate Feedback", time:  "9:45pm - 10:15pm"),
-            ScheduleItem(name: "Jazz Night", time:  "10:30pm - 1:00am"),
+            ScheduleItem(name: "Dinner", time:  "5:00pm - 6:15pm"),
+            ScheduleItem(name: "Committee Session III", time:  "6:15pm - 9:15pm"),
+            ScheduleItem(name: "Head Delegate Feedback", time:  "9:30pm - 10:00pm"),
+            ScheduleItem(name: "Jazz Night", time:  "10:00pm - 1:00am"),
     
         ]
     
@@ -73,7 +73,7 @@ class ScheduleTableViewController: ExpandableTableViewController {
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let headerView = UIView(frame: CGRectMake(0, 0, tableView.frame.size.width, 40))
-        //headerView.backgroundColor = UIColor.blueColor()
+        headerView.backgroundColor = UIColor(red: 0.588, green:0.757, blue:0.839, alpha:1)
         headerView.tag = section
         
         let headerString = UILabel(frame: CGRect(x: 10, y: 10, width: tableView.frame.size.width-10, height: 30)) as UILabel

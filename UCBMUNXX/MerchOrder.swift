@@ -14,7 +14,7 @@ class MerchOrder : PFObject {
     var delivered : Bool?
     var quantity : Double?
     var comment : String?
-    var cost : Int?
+    var cost : Double?
     
     init(item: String?, recipient: String?, delivered: Bool?, quantity: Double?, comment: String?, cost: Int?) {
         super.init()
@@ -23,6 +23,21 @@ class MerchOrder : PFObject {
         self.delivered = delivered
         self.quantity = quantity
         self.comment = comment
-        self.cost = cost
+        self.cost = Double(cost!) * quantity!
+    }
+}
+extension MerchOrder: PFSubclassing {
+    // Table view delegate methods here
+    //1
+    class func parseClassName() -> String {
+        return "MerchOrder"
+    }
+    
+    //2
+    override class func initialize() {
+        var onceToken: dispatch_once_t = 0
+        dispatch_once(&onceToken) {
+            self.registerSubclass()
+        }
     }
 }

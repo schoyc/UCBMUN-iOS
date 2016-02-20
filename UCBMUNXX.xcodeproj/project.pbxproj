@@ -86,7 +86,10 @@
 		AD86209F1C34787000C71C78 /* Bugs.report in Resources */ = {isa = PBXBuildFile; fileRef = AD86209E1C34787000C71C78 /* Bugs.report */; };
 		AD897CBD1C5B25BB00222462 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD897CBC1C5B25BB00222462 /* ScheduleTableViewController.swift */; };
 		AD897CBF1C5B2A4A00222462 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD897CBE1C5B2A4A00222462 /* ScheduleTableViewCell.swift */; };
+		ADA415881C78151100DB166A /* photo-7.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA415871C78151100DB166A /* photo-7.png */; };
+		ADA4158A1C78151A00DB166A /* camera-7.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA415891C78151A00DB166A /* camera-7.png */; };
 		ADAE9A861C3864E800C2B532 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE9A851C3864E800C2B532 /* ProfileViewController.swift */; };
+		ADBB3A1A1C78D6F3007B7403 /* ResourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB3A191C78D6F3007B7403 /* ResourceCell.swift */; };
 		ADBE6D8E1C759B4000481901 /* ScheduleItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBE6D8D1C759B4000481901 /* ScheduleItemViewController.swift */; };
 		ADBE6D951C76603D00481901 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBE6D911C76603D00481901 /* info.png */; };
 		ADBE6D961C76603D00481901 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBE6D921C76603D00481901 /* home.png */; };
@@ -209,7 +212,10 @@
 		AD86209E1C34787000C71C78 /* Bugs.report */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bugs.report; sourceTree = "<group>"; };
 		AD897CBC1C5B25BB00222462 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
 		AD897CBE1C5B2A4A00222462 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		ADA415871C78151100DB166A /* photo-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-7.png"; sourceTree = "<group>"; };
+		ADA415891C78151A00DB166A /* camera-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-7.png"; sourceTree = "<group>"; };
 		ADAE9A851C3864E800C2B532 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		ADBB3A191C78D6F3007B7403 /* ResourceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceCell.swift; sourceTree = "<group>"; };
 		ADBE6D8D1C759B4000481901 /* ScheduleItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleItemViewController.swift; sourceTree = "<group>"; };
 		ADBE6D911C76603D00481901 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		ADBE6D921C76603D00481901 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
@@ -308,10 +314,8 @@
 				AD5F2D9D1C743FF90088A7E0 /* Committees */,
 				AD5F2D9C1C743FC00088A7E0 /* Schedule */,
 				AD21CEB11C5D5AD600084813 /* ExpandableTableViewController.swift */,
-				AD21CEE61C7046C600084813 /* RulesProceduresViewController.swift */,
-				AD5064361C75582E008E7558 /* DelegateHandbookViewController.swift */,
-				AD21CEE81C70536900084813 /* HotelMapViewController.swift */,
-				AD8620351C2BFCED00C71C78 /* ResourcesViewController.swift */,
+				ADBB3A171C78D6A7007B7403 /* Single Pages */,
+				ADBB3A181C78D6CF007B7403 /* Resources */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -379,6 +383,8 @@
 				AD21CED01C6D263F00084813 /* pilate.png */,
 				AD21CED11C6D263F00084813 /* redcliff.png */,
 				AD21CED21C6D263F00084813 /* rhodesia.png */,
+				ADA415891C78151A00DB166A /* camera-7.png */,
+				ADA415871C78151100DB166A /* photo-7.png */,
 				AD21CED31C6D263F00084813 /* unsc.png */,
 				AD5064381C757F57008E7558 /* handbook.png */,
 				AD5064391C757F57008E7558 /* rules.png */,
@@ -480,6 +486,25 @@
 				ADAE9A851C3864E800C2B532 /* ProfileViewController.swift */,
 			);
 			name = Profile/Registration;
+			sourceTree = "<group>";
+		};
+		ADBB3A171C78D6A7007B7403 /* Single Pages */ = {
+			isa = PBXGroup;
+			children = (
+				AD5064361C75582E008E7558 /* DelegateHandbookViewController.swift */,
+				AD21CEE81C70536900084813 /* HotelMapViewController.swift */,
+				AD21CEE61C7046C600084813 /* RulesProceduresViewController.swift */,
+			);
+			name = "Single Pages";
+			sourceTree = "<group>";
+		};
+		ADBB3A181C78D6CF007B7403 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD8620351C2BFCED00C71C78 /* ResourcesViewController.swift */,
+				ADBB3A191C78D6F3007B7403 /* ResourceCell.swift */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		F3CB4C0DB01358612EAD11BA /* Frameworks */ = {
@@ -617,6 +642,7 @@
 				AD86203B1C2BFCED00C71C78 /* Assets.xcassets in Resources */,
 				AD86209F1C34787000C71C78 /* Bugs.report in Resources */,
 				ADBE6DA41C771C0000481901 /* flag-7.png in Resources */,
+				ADA415881C78151100DB166A /* photo-7.png in Resources */,
 				ADBE6D951C76603D00481901 /* info.png in Resources */,
 				AD21CEE11C6D263F00084813 /* rhodesia.png in Resources */,
 				ADBE6D971C76603D00481901 /* munstore.png in Resources */,
@@ -627,6 +653,7 @@
 				AD21CEDA1C6D263F00084813 /* disec.png in Resources */,
 				AD21CEDC1C6D263F00084813 /* marcos.png in Resources */,
 				AD8620391C2BFCED00C71C78 /* Main.storyboard in Resources */,
+				ADA4158A1C78151A00DB166A /* camera-7.png in Resources */,
 				AD21CEE31C6D263F00084813 /* wsf.png in Resources */,
 				AD21CEEB1C70570B00084813 /* floorplan.png in Resources */,
 				ADBE6DA21C771BEF00481901 /* home-7.png in Resources */,
@@ -713,6 +740,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD21CEC51C63E6D300084813 /* CommitteesTableViewController.swift in Sources */,
+				ADBB3A1A1C78D6F3007B7403 /* ResourceCell.swift in Sources */,
 				AD897CBD1C5B25BB00222462 /* ScheduleTableViewController.swift in Sources */,
 				AD21CEC31C63DAFD00084813 /* Committee.swift in Sources */,
 				AD5064311C74D3C5008E7558 /* StripePaymentViewController.swift in Sources */,
