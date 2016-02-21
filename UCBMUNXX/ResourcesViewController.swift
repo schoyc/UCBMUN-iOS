@@ -25,6 +25,8 @@ class ResourcesViewController: UIViewController, UICollectionViewDataSource, UIC
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.204, green:0.286, blue:0.369, alpha:1)
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
         // Do any additional setup after loading the view, typically from a nib.
     }
 

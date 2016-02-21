@@ -12,6 +12,7 @@ class NewsPost: PFObject {
     
     @NSManaged var image: PFFile?
     @NSManaged var text: String?
+    @NSManaged var headline: String?
     @NSManaged var priority: Int
 
     override class func query() -> PFQuery? {
@@ -24,9 +25,10 @@ class NewsPost: PFObject {
         return query
     }
     
-    init(image: PFFile, text: String?, priority: Int) {
+    init(image: PFFile, headline: String?, text: String?, priority: Int) {
         super.init()
         self.image = image
+        self.headline = headline
         self.text = text
         self.priority = priority
         //self.repliesCount = repliesCount

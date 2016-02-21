@@ -73,10 +73,12 @@ class CommitteesTableViewController: ExpandableTableViewController {
         
         let headerView = UIView(frame: CGRectMake(0, 0, tableView.frame.size.width, 40))
         //headerView.backgroundColor = UIColor.blueColor()
+        headerView.backgroundColor = UIColor(red: 0.588, green:0.757, blue:0.839, alpha:1)
         headerView.tag = section
         
         let headerString = UILabel(frame: CGRect(x: 10, y: 10, width: tableView.frame.size.width-10, height: 30)) as UILabel
         headerString.text = groupArray[section] as String
+        headerString.font = UIFont(name:"HelveticaNeue-Medium", size: 16.0)
         headerView .addSubview(headerString)
         
         let headerTapped = UITapGestureRecognizer (target: self, action:"sectionHeaderTapped:")

@@ -78,6 +78,7 @@ class ScheduleTableViewController: ExpandableTableViewController {
         
         let headerString = UILabel(frame: CGRect(x: 10, y: 10, width: tableView.frame.size.width-10, height: 30)) as UILabel
         headerString.text = groupArray[section] as String
+        headerString.font = UIFont(name:"HelveticaNeue-Medium", size: 16.0)
         headerView .addSubview(headerString)
         
         let headerTapped = UITapGestureRecognizer (target: self, action:"sectionHeaderTapped:")

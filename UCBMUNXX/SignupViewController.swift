@@ -22,7 +22,8 @@ class SignupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.tabBarController?.tabBar.hidden = true
+        self.navigationController?.navigationBar.hidden = true
         // Do any additional setup after loading the view.
     }
 

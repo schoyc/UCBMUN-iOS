@@ -29,7 +29,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
         //Set Stripe Keys
         Stripe.setDefaultPublishableKey("pk_test_tejoqCcbm4uGqYxbzWzXYtzQ")
-    
+        
+        UITabBar.appearance().tintColor = UIColor(red:0.38, green:0.671, blue:0.847, alpha:1)
+        
+        UINavigationBar.appearance().barStyle = UIBarStyle.Black
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         
         // Override point for customization after application launch.
         return true

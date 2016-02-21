@@ -94,7 +94,7 @@ class ComposePostViewController: UIViewController, UITextViewDelegate {
             if succeeded {
                 
                 print("REPLY SUCCEEDED")
-                self.dismissViewControllerAnimated(true, completion: nil);
+                self.navigationController?.popViewControllerAnimated(true)
                 print("TRANSITION WORKING?")
             } else {
                 print("ERROR")

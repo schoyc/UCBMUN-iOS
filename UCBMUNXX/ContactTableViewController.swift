@@ -52,8 +52,8 @@ class ContactTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("contactCell", forIndexPath: indexPath) as! ContactTableViewCell
         let contact = self.contacts[indexPath.row]
         
-        
-        cell.contactName.text = contact[0]
+        cell.contactName.text = "Santa Calus"
+        //cell.contactName.text = contact[0]
         cell.contactTitle.text = contact[1]
         cell.contactPhone.text = contact[2]
         cell.contactImage.image = UIImage(named: contact[3])

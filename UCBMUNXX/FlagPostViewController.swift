@@ -42,32 +42,28 @@ class FlagPostViewController: UIViewController {
     @IBAction func inappropriateSelected(sender: AnyObject) {
         flaggedPost.flag = "Inappropriate Content"
         flaggedPost.saveInBackground()
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.navigationController?.popViewControllerAnimated(true)
         //self.navigationController?.popViewControllerAnimated(true)
     }
     
     @IBAction func rudeHurtfulSelected(sender: AnyObject) {
         flaggedPost.flag = "Rude/Hurtful"
         flaggedPost.saveInBackground()
-        self.dismissViewControllerAnimated(true, completion: nil);
+        self.navigationController?.popViewControllerAnimated(true)
     }
     
     @IBAction func spamSelected(sender: AnyObject) {
         flaggedPost.flag = "Spam"
         flaggedPost.saveInBackground()
-        self.dismissViewControllerAnimated(true, completion: nil);
+        self.navigationController?.popViewControllerAnimated(true)
     }
     
     @IBAction func otherSelected(sender: AnyObject) {
         flaggedPost.flag = "Other"
         flaggedPost.saveInBackground()
-        self.dismissViewControllerAnimated(true, completion: nil);
+        self.navigationController?.popViewControllerAnimated(true)
     }
     
-    @IBAction func cancelPressed(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil);
-        
-    }
 
     
     

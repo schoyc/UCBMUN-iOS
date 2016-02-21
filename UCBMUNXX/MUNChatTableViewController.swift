@@ -18,6 +18,8 @@ class MUNChatTableViewController: PFQueryTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.204, green:0.286, blue:0.369, alpha:1)
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
         //recentOrPopularControl.addTarget(self, action: "recentOrPopularChanged", forControlEvents: .ValueChanged)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

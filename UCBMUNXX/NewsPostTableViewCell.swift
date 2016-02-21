@@ -14,6 +14,7 @@ class NewsPostTableViewCell: PFTableViewCell {
     @IBOutlet weak var newsText: UILabel!
     @IBOutlet weak var newsImage: PFImageView!
     
+    @IBOutlet weak var newsHeadline: UILabel!
     @IBOutlet weak var newsDate: UILabel!
     
     @IBOutlet weak var progressLoading: UIProgressView!

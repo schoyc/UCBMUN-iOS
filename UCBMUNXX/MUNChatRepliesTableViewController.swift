@@ -38,6 +38,7 @@ class MUNChatRepliesTableViewController: MUNChatTableViewController {
                 composePostVC.setPostToReply(self.parentPostId!)
             
             case "MUNChatToFlagPost":
+                print(self.tableView)
                 let tapPoint = sender!.convertPoint(CGPointZero, toView: self.tableView)
                 let tapIndex = self.tableView.indexPathForRowAtPoint(tapPoint)
                 let post = objectAtIndexPath(tapIndex) as! MUNChatPost
@@ -55,13 +56,10 @@ class MUNChatRepliesTableViewController: MUNChatTableViewController {
         performSegueWithIdentifier("RepliesToComposePost", sender: sender)
     }
     
-    @IBAction func backToMUNChatPressed(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
     
     
     @IBAction func flagClicked(sender: AnyObject) {
-        performSegueWithIdentifier("MUNChatToFlagPost", sender: nil)
+        performSegueWithIdentifier("MUNChatToFlagPost", sender: sender)
     }
     
 
